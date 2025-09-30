@@ -1,5 +1,5 @@
 [project]
-name = "mlops-course"
+name = "bank_prediction"
 description = "MLOps with Databricks course"
 requires-python = ">=3.12, <3.13"
 dependencies = [
@@ -29,7 +29,8 @@ dev = ["databricks-connect>=16.0, <17",
 test = ["pre-commit>=4.1.0, <5",
        "pytest>=8.0.0, <9",
        "pytest-cov>=5.0.0, <6",
-       "pyspark>=3.4.0, <4"]
+       "pyspark==3.4.4",
+       "pydantic-settings>=2.0.0"]
 
 [build-system]
 requires = [
@@ -39,7 +40,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where =["src"]
-include = ["house_price*", "marvel_characters*"]
+include = ["bank_prediction*"]
 
 
 [tool.setuptools.dynamic]
@@ -80,8 +81,7 @@ lint.ignore = [
     "E501", # line-too-long
     "C901", # too complex
     "ERA001", # commented out code
-    "D100", # missing docstring
-    "ERA001" # commented out code
+    "D100" # missing docstring
 ]
 
 [tool.ruff.format]

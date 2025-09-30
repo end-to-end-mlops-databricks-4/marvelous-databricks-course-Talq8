@@ -2,8 +2,8 @@ version: '3'
 dotenv: [.env]
 
 vars:
-  PACKAGE_IMPORT_NAME: mlops_course
-  PYTHON_VERSION: 3.11
+  PACKAGE_IMPORT_NAME: bank_prediction
+  PYTHON_VERSION: 3.12
 
 tasks:
   create-venv:
@@ -31,6 +31,14 @@ tasks:
     desc: Run pre-commit hooks
     cmds:
       - uv run pre-commit run --all-files
+  clean:
+    desc: "Clean up build artifacts, caches, and temporary files"
+    cmds:
+      - rm -rf dist build coverage.xml test-reports tests/mlruns test-house_price
+      - find . -type d \( -name "*cache*" -o -name "*.dist-info" -o -name "*.egg-info" -o -name "*htmlcov" \) -not -path "*env/*" -exec rm -r {} + || true
+      - find . -type f -name "*.pyc" -not -path "*env/*" -exec rm {} +
+    silent: true
+
 
   help:
     desc: Print all tasks defined in the Taskfile
