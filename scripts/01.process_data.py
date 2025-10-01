@@ -2,16 +2,16 @@ import yaml
 from loguru import logger
 from pyspark.sql import SparkSession
 
-from house_price.config import ProjectConfig
-from house_price.data_processor import DataProcessor, generate_synthetic_data, generate_test_data
-from marvelous.common import create_parser
+from bank_prediction.config import ProjectConfig
+from bank_prediction.data_processor import DataProcessor, generate_synthetic_data, generate_test_data
+#from marvelous.common import create_parser
 
-args = create_parser()
+#args = create_parser()
 
-root_path = args.root_path
-config_path = f"{root_path}/files/project_config.yml"
+#root_path = args.root_path
+config_path = f"{root_path}/files/project_config_bank.yml"
 config = ProjectConfig.from_yaml(config_path=config_path, env=args.env)
-is_test = args.is_test
+#is_test = args.is_test
 
 logger.info("Configuration loaded:")
 logger.info(yaml.dump(config, default_flow_style=False))
@@ -20,17 +20,17 @@ logger.info(yaml.dump(config, default_flow_style=False))
 spark = SparkSession.builder.getOrCreate()
 
 df = spark.read.csv(
-    f"/Volumes/{config.catalog_name}/{config.schema_name}/data/data.csv", header=True, inferSchema=True
+    f"/Volumes/{config.catalog_name}/{config.schema_name}/data/data_bank.csv", header=True, inferSchema=True
 ).toPandas()
 
-if is_test==0:
+""" if is_test==0:
     # Generate synthetic data.
     # This is mimicking a new data arrival. In real world, this would be a new batch of data.
     # df is passed to infer schema
     new_data = generate_synthetic_data(df, num_rows=100)
     logger.info("Synthetic data generated.")
 else:
-    # Generate synthetic data
+ """    # Generate synthetic data
     # This is mimicking a new data arrival. This is a valid example for integration testing.
     new_data = generate_test_data(df, num_rows=100)
     logger.info("Test data generated.")
