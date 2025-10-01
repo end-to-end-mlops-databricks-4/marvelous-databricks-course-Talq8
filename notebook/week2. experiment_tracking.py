@@ -21,8 +21,8 @@ mlflow.get_tracking_uri()
 mlflow.get_registry_uri()
 
 # COMMAND ----------
-experiment = mlflow.set_experiment(experiment_name="/Shared/taldemo")
-mlflow.set_experiment_tags({"repository_name": "end-to-end-mlops-databricks-4/course-code-hub_tal"})
+experiment = mlflow.set_experiment(experiment_name="/Shared/bank-prediction-basic")
+mlflow.set_experiment_tags({"repository_name": "end-to-end-mlops-databricks-4/marvelous-databricks-course-Talq8"})
 
 
 print(experiment)
@@ -84,7 +84,7 @@ print(run_info["data"]["params"])
 # COMMAND ----------
 
 run_id = mlflow.search_runs(
-    experiment_names=["/Shared/demo_tal"],
+    experiment_names=["/Shared/bank-prediction-basic"],
     filter_string="tags.git_sha='1234567890abcd'",
 ).run_id[0]
 run_info = mlflow.get_run(run_id=f"{run_id}").to_dictionary()

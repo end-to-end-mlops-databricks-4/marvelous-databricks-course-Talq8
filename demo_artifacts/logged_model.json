@@ -1,10 +1,10 @@
 {
-    "artifact_location": "dbfs:/databricks/mlflow-tracking/3924156320672179/logged_models/m-b7fda9ade50f47ef81d9250b18a7e461/artifacts",
-    "creation_timestamp": 1759309168764,
-    "experiment_id": "3924156320672179",
-    "last_updated_timestamp": 1759309239018,
+    "artifact_location": "dbfs:/databricks/mlflow-tracking/2911333518833323/logged_models/m-c6fd61382ba047a699db1ef47c74604e/artifacts",
+    "creation_timestamp": 1759311312047,
+    "experiment_id": "2911333518833323",
+    "last_updated_timestamp": 1759311318209,
     "metrics": [],
-    "model_id": "m-b7fda9ade50f47ef81d9250b18a7e461",
+    "model_id": "m-c6fd61382ba047a699db1ef47c74604e",
     "model_type": "",
     "name": "lightgbm-pipeline-model",
     "params": {
@@ -13,17 +13,17 @@
         "model_type": "LightGBM with preprocessing",
         "n_estimators": "1000"
     },
-    "source_run_id": "6fa43f3f98b74b1b821413f76cdfccaf",
+    "source_run_id": "680c79dc8e6d45d09eff33a12055162b",
     "status": 2,
     "status_message": "",
     "tags": {
         "mlflow.databricks.cluster.id": "0907-053801-36k46tuu",
-        "mlflow.databricks.notebook.commandID": "1759307580774_8717532197456976136_9d2f6035df3141709a7445e119d0d2c0",
-        "mlflow.loggedModel.artifactLocation": "dbfs:/databricks/mlflow-tracking/3924156320672179/logged_models/m-b7fda9ade50f47ef81d9250b18a7e461/artifacts",
+        "mlflow.databricks.notebook.commandID": "1759307580776_8687317423573105250_97eb822c7d524d228afaea88209eb22e",
+        "mlflow.loggedModel.artifactLocation": "dbfs:/databricks/mlflow-tracking/2911333518833323/logged_models/m-c6fd61382ba047a699db1ef47c74604e/artifacts",
         "mlflow.loggedModel.name": "lightgbm-pipeline-model",
         "mlflow.source.name": "/home/tma/marvelous-databricks-course-Talq8/.venv/lib/python3.12/site-packages/ipykernel_launcher.py",
         "mlflow.source.type": "LOCAL",
-        "mlflow.artifacts.spn": "/WorkspaceInternal/Mlflow/Artifacts/3924156320672179/LoggedModels/m-b7fda9ade50f47ef81d9250b18a7e461/",
+        "mlflow.artifacts.spn": "/WorkspaceInternal/Mlflow/Artifacts/2911333518833323/LoggedModels/m-c6fd61382ba047a699db1ef47c74604e/",
         "mlflow.user": "talpythonq8@gmail.com"
     }
 }

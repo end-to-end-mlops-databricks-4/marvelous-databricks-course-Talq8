@@ -49,7 +49,7 @@ pipeline = Pipeline(
 pipeline.fit(X_train, y_train)
 
 # COMMAND ----------
-mlflow.set_experiment("/Shared/demo-model")
+mlflow.set_experiment("/Shared/bank-prediction-basic")
 with mlflow.start_run(run_name="demo-run-model",
                       tags={"git_sha": "1234567890abcd",
                             "branch": "week2"},

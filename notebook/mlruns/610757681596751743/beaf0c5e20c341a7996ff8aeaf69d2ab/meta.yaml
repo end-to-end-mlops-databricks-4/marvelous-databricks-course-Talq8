@@ -1,0 +1,14 @@
+artifact_uri: file:///home/tma/marvelous-databricks-course-Talq8/notebook/mlruns/610757681596751743/beaf0c5e20c341a7996ff8aeaf69d2ab/artifacts
+end_time: 1759310664070
+entry_point_name: ''
+experiment_id: '610757681596751743'
+lifecycle_stage: active
+run_id: beaf0c5e20c341a7996ff8aeaf69d2ab
+run_name: demo-run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759310445968
+status: 3
+tags: []
+user_id: tma

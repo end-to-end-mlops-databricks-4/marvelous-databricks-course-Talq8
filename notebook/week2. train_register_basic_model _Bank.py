@@ -22,7 +22,7 @@ if not is_databricks():
 
 config = ProjectConfig.from_yaml(config_path="../project_config_bank.yml", env="dev")
 spark = SparkSession.builder.getOrCreate()
-tags = Tags(**{"git_sha": "abcd12345", "branch": "week2"})
+tags = Tags(**{"git_sha": "1234567890abcd", "branch": "week2"})
 
 # COMMAND ----------
 # Initialize model with the config path
@@ -39,7 +39,7 @@ basic_model.log_model()
 
 # COMMAND ----------
 run_id = mlflow.search_runs(
-    experiment_names=["/Shared/house-prices-basic"], filter_string="tags.branch='week2'"
+    experiment_names=["/Shared/bank-prediction-basic"], filter_string="tags.branch='week2'"
 ).run_id[0]
 
 model = mlflow.sklearn.load_model(f"runs:/{run_id}/lightgbm-pipeline-model")
@@ -59,7 +59,7 @@ basic_model.register_model()
 # COMMAND ----------
 # Predict on the test set
 
-test_set = spark.table(f"{config.catalog_name}.{config.schema_name}.test_set_bank").limit(10)
+test_set = spark.table(f"{config.catalog_name}.{config.schema_name}.test_set_bank_1").limit(10)
 
 X_test = test_set.drop(config.target).toPandas()
 
