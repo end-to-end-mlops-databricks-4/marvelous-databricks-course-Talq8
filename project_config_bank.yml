@@ -1,9 +1,9 @@
 prd:
   catalog_name: mlops_prd
-  schema_name: house_prices
+  schema_name: talpytho
 acc:
   catalog_name: mlops_acc
-  schema_name: house_prices
+  schema_name: talpytho
 dev:
   catalog_name: mlops_dev
   schema_name: talpytho
