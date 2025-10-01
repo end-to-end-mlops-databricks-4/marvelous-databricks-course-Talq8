@@ -1,0 +1,40 @@
+{
+    "info": {
+        "artifact_uri": "file:///home/tma/marvelous-databricks-course-Talq8/notebook/mlruns/610757681596751743/beaf0c5e20c341a7996ff8aeaf69d2ab/artifacts",
+        "end_time": 1759310446936,
+        "experiment_id": "610757681596751743",
+        "lifecycle_stage": "active",
+        "run_id": "beaf0c5e20c341a7996ff8aeaf69d2ab",
+        "run_name": "demo-run",
+        "start_time": 1759310445968,
+        "status": "FINISHED",
+        "user_id": "tma"
+    },
+    "data": {
+        "metrics": {
+            "metric2": 2.0,
+            "metric1": 1.0
+        },
+        "params": {
+            "type": "demo"
+        },
+        "tags": {
+            "mlflow.source.name": "/home/tma/marvelous-databricks-course-Talq8/.venv/lib/python3.12/site-packages/ipykernel_launcher.py",
+            "mlflow.databricks.notebook.commandID": "1759307580775_6897509366639596753_5e604a0ee07d480fbbdb6d64b3c65ed7",
+            "branch": "week2",
+            "mlflow.databricks.cluster.id": "0907-053801-36k46tuu",
+            "git_sha": "1234567890abcd",
+            "mlflow.source.type": "LOCAL",
+            "mlflow.user": "tma",
+            "mlflow.note.content": "demo run",
+            "mlflow.runName": "demo-run"
+        }
+    },
+    "inputs": {
+        "model_inputs": [],
+        "dataset_inputs": []
+    },
+    "outputs": {
+        "model_outputs": []
+    }
+}

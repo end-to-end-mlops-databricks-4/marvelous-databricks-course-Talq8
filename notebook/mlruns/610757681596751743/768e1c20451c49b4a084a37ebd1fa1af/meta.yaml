@@ -1,0 +1,14 @@
+artifact_uri: file:///home/tma/marvelous-databricks-course-Talq8/notebook/mlruns/610757681596751743/768e1c20451c49b4a084a37ebd1fa1af/artifacts
+end_time: 1759310441596
+entry_point_name: ''
+experiment_id: '610757681596751743'
+lifecycle_stage: active
+run_id: 768e1c20451c49b4a084a37ebd1fa1af
+run_name: smiling-squid-926
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759310434036
+status: 3
+tags: []
+user_id: tma

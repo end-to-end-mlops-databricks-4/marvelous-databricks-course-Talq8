@@ -1,0 +1,46 @@
+prd:
+  catalog_name: mlops_prd
+  schema_name: talpytho
+acc:
+  catalog_name: mlops_acc
+  schema_name: talpytho
+dev:
+  catalog_name: mlops_dev
+  schema_name: talpytho
+
+experiment_name_basic: /Shared/bank-prediction-basic
+experiment_name_custom: /Shared/bank-prediction-custom
+experiment_name_fe:     /Shared/house-prices-fe
+
+parameters:
+  learning_rate: 0.01
+  n_estimators: 1000
+  max_depth: 6
+
+
+num_features:
+- id
+- age
+- balance
+- day
+- duration
+- campaign
+- pdays
+- previous
+
+
+
+cat_features:
+  - job
+  - marital
+  - education
+  - default
+  - housing
+  - loan
+  - contact
+  - month
+  - poutcome
+
+
+target: y
+
