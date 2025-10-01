@@ -8,9 +8,9 @@ dev:
   catalog_name: mlops_dev
   schema_name: talpytho
 
-experiment_name_basic: /Shared/house-prices-basic
-experiment_name_custom: /Shared/house-prices-custom
-experiment_name_fe: /Shared/house-prices-fe
+experiment_name_basic: /Shared/bank-prediction-basic
+experiment_name_custom: /Shared/bank-prediction-custom
+experiment_name_fe:     /Shared/house-prices-fe
 
 parameters:
   learning_rate: 0.01
