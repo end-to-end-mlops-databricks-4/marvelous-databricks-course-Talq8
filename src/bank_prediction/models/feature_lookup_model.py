@@ -4,7 +4,7 @@ from datetime import datetime
 
 import mlflow
 from databricks import feature_engineering
-from databricks.feature_engineering import FeatureFunction, FeatureLookup
+#from databricks.feature_engineering import FeatureFunction, FeatureLookup
 from databricks.sdk import WorkspaceClient
 from lightgbm import LGBMRegressor
 from loguru import logger
